@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'johnstonITCbold';
+  src: url("fonts/johnston-itc-std-bold-5901d8daf191a.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'johnstonITCmedium';
+  src: url("fonts/johnston-itc-std-medium-5901d93a678a5.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-family: "johnstonITCmedium", "Arial", sans-serif;
+  color: #2c2c2c;
+  background-color: #fafafa; }
+
+.btn {
+  font-family: "johnstonITCmedium", "Arial", sans-serif;
+  font-size: 18px;
+  border-radius: 8px;
+  border-width: 2px; }
+
+a {
+  color: #b40a4b; }
+  a:hover {
+    text-decoration: underline; }
+
+.container h2 {
+  color: #b40a4b;
+  font-family: "johnstonITCbold", "Arial", sans-serif;
+  font-size: 50px;
+  letter-spacing: -0.5px;
+  margin-bottom: 10px; }
+  .container h2 + div {
+    font: 22px "johnstonITCmedium", "Arial", sans-serif; }
+
+.container label {
+  font-family: "johnstonITCmedium", "Arial", sans-serif;
+  font-size: 18px;
+  color: #7c7c7c; }
+  .container label span {
+    width: 100%;
+    text-align: center; }
+
+.container h3 {
+  font-family: "johnstonITCbold", "Arial", sans-serif; }
+
+.container h3:first-of-type {
+  margin-top: 30px; }
+
+.container .btn-secondary {
+  color: #6b0036;
+  background-color: #fafafa;
+  border-color: #6b0036;
+  border-style: solid; }
+  .container .btn-secondary:hover {
+    background-color: #6b0036;
+    color: #fafafa;
+    text-decoration: none; }
+
+.container .logo {
+  background: url("images/ruby_clear_small.png") no-repeat;
+  background-size: 80px 93px;
+  width: 80px;
+  height: 93px; }
+  .container .logo #svgloader {
+    display: none; }
+
+.container .form-link {
+  font-family: "johnstonITCmedium", "Arial", sans-serif;
+  font-size: 18px; }
+
+.btn-primary {
+  background-color: #b40a4b; }
+  .btn-primary:active, .btn-primary:focus, .btn-primary:active:hover, .btn-primary:active:focus {
+    background-color: #b40a4b; }
+  .btn-primary:hover {
+    background-color: #fafafa;
+    color: #b40a4b;
+    border: 2px solid #b40a4b; }
+
+.form-group .form-control {
+  font-family: "johnstonITCmedium", "Arial", sans-serif;
+  height: 47px;
+  text-align: center; }
+  .form-group .form-control:focus {
+    color: #6b0036; }
+  .form-group .form-control:focus + label:after {
+    background: #b40a4b;
+    height: 3px; }
+  .form-group .form-control:focus.has-error + label:after,
+  .form-group .form-control.has-error + label:after {
+    background: #ff0000;
+    height: 3px; }
+  .form-group .form-control + label:before {
+    background-color: #e7e7e7;
+    color: #7c7c7c;
+    border-bottom: none; }
+  .form-group .form-control:focus.has-error + label:before,
+  .form-group .form-control.has-error + label:before {
+    background: #e7e7e7 no-repeat url("images/sprites.png") 11px 15px; }
+
+.form-group .shake .form-control:focus + label:before,
+.form-group .shake .form-control + label:before {
+  background: #e7e7e7 no-repeat url("images/sprites.png") 11px 15px; }
+
+.form-group .shake .form-control:focus + label:after,
+.form-group .shake .form-control + label:after {
+  background: #ff0000;
+  height: 3px;
+  transform: scaleX(1); }
+
+.form-group .isvalid .form-control:focus + label:before,
+.form-group .isvalid .form-control + label:before {
+  background: #e7e7e7 no-repeat url("images/sprites.png") 11px -27px; }
+
+.form-group .isvalid .form-control:focus + label:after,
+.form-group .isvalid .form-control + label:after {
+  background: #76ab3b;
+  height: 3px;
+  transform: scaleX(1); }
+
+.error-message {
+  font-family: "johnstonITCmedium", "Arial", sans-serif;
+  color: #ff0000; }
+  .error-message.show-error {
+    margin-top: 5px;
+    padding-left: 0;
+    text-align: center; }
+  .error-message:before {
+    background: none;
+    width: 0;
+    height: 0; }
+
+.show-password {
+  background: url("images/sprites.png") no-repeat 0 -82px;
+  width: 30px;
+  height: 20px; }
+

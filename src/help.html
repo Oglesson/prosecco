@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Ruby | Sign </title>
+    <link href="../www/css/style.min.css" rel="stylesheet" inline>
+    <link href="../www/css/rubyskin.min.css" rel="stylesheet" inline>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="sso-body">
+
+    <script type="text/javascript">
+        //js test for SSO backend validation
+        document.addEventListener('DOMContentLoaded', function () {
+            var form = document.getElementById('login');
+            form.jsEnabled.value = "true";
+        });
+
+        function showHelp(helpLink, width, height) {
+            var windowName = "help";
+            var windowWidth = width;
+            var windowHeight = height;
+            var statusBar = "no";
+            var scrollable = "yes";
+            var location = "no";
+            var windowProperties = "width=" + windowWidth + ",height=" + windowHeight + ",status=" + statusBar + ",scrollbars=" + scrollable + ",location=" + location;
+            window.open(helpLink, windowName, windowProperties);
+        }
+    </script>
+
+    <div class="container">
+        <div class="logo slide-up-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" height="100" width="70" viewBox="40 55 900 610" id="svgloader">
+                <path xmlns="http://www.w3.org/2000/svg" id="svgInfinity" fill="none" stroke="#ED0000" stroke-width="35" d="M654.321,377.922c29.828,40.977,62.912,74.562,96.109,97.498  c33.249,22.988,66.114,35.139,95.036,35.139c27.883,0,51.258-11.501,67.604-33.264c19.812-26.312,30.732-63.699,30.75-105.271  c0-41.571-10.923-78.956-30.753-105.272c-16.338-21.757-39.714-33.257-67.601-33.257l0,0c-28.944,0-61.805,12.149-95.037,35.137  c-33.229,22.947-66.37,56.611-96.267,97.713l-8.808,12.311c-59.42,82.599-125.618,150.242-192.048,196.134  c-65.203,45.084-129.652,68.91-186.372,68.91c-54.679,0-100.52-22.553-132.574-65.23c-38.854-51.602-60.269-124.92-60.301-206.446  c0-81.523,21.415-154.837,60.306-206.446c32.041-42.667,77.881-65.219,132.568-65.219l0,0c56.759,0,121.206,23.826,186.374,68.905  c66.363,45.83,132.546,113.456,192.012,196.087L654.321,377.922z"
+                    stroke-dasharray="2590.59375 2590.59375" stroke-dashoffset="0"></path>
+            </svg>
+        </div>
+       
+        <h3>Help signing in</h3>
+        <h4>Forgotten your sign in details?</h4>
+        <p>No problem. Here are a few hints that might help:</p>
+        <ul>
+            <li>The email address you need is the email address you signed up with</li>
+            <li>Your password is between 6 and 10 characters. It begins with a letter and contains a number.</li>
+        </ul>
+        <p>Still not sure? Find the <a target="_blank" href="#">email address</a>                or <a target="_blank" href="#">reset your password</a>.</p>
+
+        <h4>Registering an account</h4>
+        <p>If you're a customer but don't have an online account, you can <a target="_blank" href="#">register</a> now - it only takes a minute. Just grab your account number and area reference, which you can find on your
+            bill or in an eBilling email.</p>
+    </div>
+    <script type="text/javascript" src="../www/js/scriptAll.min.js" inline></script>
+</body>
+
+</html>

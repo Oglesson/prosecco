@@ -1,0 +1,61 @@
+// Color
+$vm-brand-red: #ed0000;
+$vm-brand-white: #fff;
+$vm-brand-purple: #5f2878;
+$vm-brand-plum: #511b3d;
+$vm-brand-yellow: #ffcc00;
+$vm-error: #ffcc00;
+$black20: #ccc;
+$black40: #999;
+$black80: #333;
+$grey-2: #dbdbdb;
+
+// Font
+$serclor-font: 'serclor', 'Arial', sans-serif;
+$serclorwhisper-font: 'serclorwhisper', 'Arial', sans-serif;
+
+
+$screen-xxs: 320px;
+// Breakpoints (Bootstrap)
+$screen-xs: 480px;
+$screen-xs-min: $screen-xs;
+$screen-phone: $screen-xs-min;
+
+$screen-xs-max: auto;
+
+// ===== Small screen / tablet
+$screen-sm: 768px;
+$screen-sm-min: $screen-sm;
+$screen-tablet: $screen-sm-min;
+
+// ===== Medium screen / desktop
+$screen-md: 992px;
+$screen-md-min: $screen-md;
+$screen-desktop: $screen-md-min;
+
+$screen-md-lg: 1024px;
+
+// ===== Large screen / wide desktop
+$screen-lg: 1200px;
+$screen-lg-min: $screen-lg;
+$screen-lg-desktop: $screen-lg-min;
+
+// Media queries
+$small-phone: "only screen and (max-width: $screen-xxs)";
+$phone: "only screen and (max-width: $screen-xs)";
+$phone-dp-1: "(device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2)";
+$phone-dp-2: "(min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 2)";
+$phone-dp-3: "(min-device-height: 736px) and (min-device-width: 414px) and (-webkit-min-device-pixel-ratio: 3)";
+$medium-phone: "only screen and (min-width: $screen-xs) and (max-width: $screen-sm - 1)";
+$medium-phone-dp-2: "only screen and (min-width: $screen-xs) and (max-width: $screen-sm - 1) and (-webkit-min-device7-pixel-ratio: 2)";
+$tablet: "only screen and (min-width: $screen-sm) and (max-width: $screen-md)";
+$tablet-ld: "only screen and (min-width: $screen-sm) and (max-width: $screen-md-lg)";
+$desktop: "only screen and (min-width:  $screen-lg)";
+
+// Other variables
+$container-width-md: 960px;
+$container-width-sm: 520px;
+$boundary-color: #5a0a3c;
+$text-color: #333333;
+$login-form-gutter: 30px;
+$link-color: #ff0000;

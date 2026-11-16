@@ -1,0 +1,74 @@
+.icon {
+    font-size: 10px;
+}
+
+.icon:before {
+    content:' ';
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url("../../www/images/vm-sprite.svg");
+    background-repeat: no-repeat;
+    background-size: 4.2em 24.4em;
+}
+
+.no-svg .icon:before {
+    background-image: url("../vm-sprite.png");
+}
+
+
+
+  .icon.envelope-icon:before {
+      background-position: 0em 0em;
+      width: 4.2em;
+      height: 4.2em;
+  }
+
+
+
+
+  .icon.file-text-icon:before {
+      background-position: 0em -4.2em;
+      width: 4em;
+      height: 4em;
+  }
+
+
+
+
+  .icon.gift-icon:before {
+      background-position: 0em -8.2em;
+      width: 4em;
+      height: 4em;
+  }
+
+
+
+
+  .icon.support-icon:before {
+      background-position: 0em -12.2em;
+      width: 4em;
+      height: 4em;
+  }
+
+
+
+
+  .icon.tv-wing-icon:before {
+      background-position: 0em -16.2em;
+      width: 4.2em;
+      height: 4.2em;
+  }
+
+
+
+
+  .icon.user-icon:before {
+      background-position: 0em -20.4em;
+      width: 4em;
+      height: 4em;
+  }
+
+
+
+
+

@@ -1,0 +1,183 @@
+@import "variables";
+@import "rfonts";
+@import "rubyvariables";
+
+body {
+	font-family: $ruby-main-font;
+	color: $rubyblack;
+    background-color: $rubyoffwhite;
+}
+
+.btn {
+    font-family: $ruby-main-font;
+    font-size: 18px;
+    border-radius: 8px;
+    border-width: 2px;
+}
+
+a {
+    color: $ruby-brand-purple;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.container {
+    h2 {
+        color: $ruby-brand-purple;
+        font-family: $ruby-header-font;
+        font-size: 50px;
+        letter-spacing: -0.5px;
+        margin-bottom: 10px;
+        &+ div {
+        	font: 22px $ruby-main-font;
+        }
+    }
+	label {
+		font-family: $ruby-main-font;
+        font-size: 18px;
+        color: $formcopygrey;
+        span{
+            width: 100%;
+            text-align: center;
+        }
+	}
+    h3 {
+        font-family: $ruby-header-font;
+    }
+
+    h3:first-of-type {
+        margin-top: 30px;
+    }
+
+    .btn-secondary {
+        color: $ruby-brand-plum;
+        background-color: $rubyoffwhite;
+        border-color: $ruby-brand-plum;
+        border-style: solid;
+        &:hover {
+            background-color: $ruby-brand-plum;
+            color: $rubyoffwhite;
+            text-decoration: none;
+        }
+    }
+
+    .logo {
+        background: url('images/ruby_clear_small.png') no-repeat;
+        background-size: 80px 93px;
+        width: 80px;
+        height: 93px;
+        #svgloader {
+            display:none;
+        }
+    }
+    .form-link {
+        font-family: $ruby-main-font;
+        font-size: 18px;
+    }
+    
+}
+
+.btn-primary {
+    background-color: $ruby-brand-purple;
+    &:active, &:focus, &:active:hover, &:active:focus{
+        background-color: $ruby-brand-purple;
+    }
+    &:hover  {
+        background-color: $rubyoffwhite;
+        color: $ruby-brand-purple;
+        border: 2px solid $ruby-brand-purple;
+    }
+
+}
+
+.form-group {
+    .form-control {
+    	font-family: $ruby-main-font;
+        height: 47px;
+        text-align: center;
+
+        &:focus {
+            color: $ruby-brand-plum;
+        }
+
+        &:focus + label:after {
+            background: $ruby-brand-purple;
+            height: 3px;
+        }
+
+        &:focus.has-error + label:after,
+        &.has-error + label:after  {
+            background: $rubyerror;
+            height: 3px;
+        }
+
+        & + label:before {
+        	background-color: $formfieldbackgrey;
+        	color: $formcopygrey;
+            border-bottom: none;
+        }
+        &:focus.has-error + label:before,
+        &.has-error + label:before {
+            background: $formfieldbackgrey no-repeat url('images/sprites.png') 11px 15px;
+        }
+
+        
+    }
+
+    .shake {
+        .form-control {
+            &:focus + label:before,
+            & + label:before {
+                background: $formfieldbackgrey no-repeat url('images/sprites.png') 11px 15px;
+            }
+            &:focus + label:after,
+            & + label:after  {
+                background: $rubyerror;
+                height: 3px;
+                transform: scaleX(1);
+            }  
+        
+        }
+        
+    }
+    .isvalid {
+        .form-control {
+            &:focus + label:before,
+            & + label:before {
+                background: $formfieldbackgrey no-repeat url('images/sprites.png') 11px -27px;
+            }
+            &:focus + label:after,
+            & + label:after  {
+                background: $rubysuccess;
+                height: 3px;
+                transform: scaleX(1);
+            }  
+        
+        }
+        
+    }
+}
+
+.error-message {
+    font-family: $ruby-main-font;
+    color: $rubyerror;
+    &.show-error {
+        margin-top: 5px;
+        padding-left: 0;
+        text-align: center;
+    }
+    &:before {
+        background: none;
+        width: 0;
+        height: 0;
+
+    }
+}
+
+.show-password {
+        background: url('images/sprites.png') no-repeat 0 -82px;
+        width: 30px;
+        height: 20px;
+        
+    }
